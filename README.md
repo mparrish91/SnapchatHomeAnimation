@@ -1,6 +1,6 @@
 # *SnapChatHomeAnimation*
 
-**SnapChatHomeAnimation** quick and dirty prototype of the latest snapchat UI Controls on the home screen. (when you switch between tab bars)
+**SnapChatHomeAnimation** is a quick and dirty prototype of the latest snapchat UI Controls on the home screen. (when you switch between tab bars)
 
 
 ## Video Walkthrough
