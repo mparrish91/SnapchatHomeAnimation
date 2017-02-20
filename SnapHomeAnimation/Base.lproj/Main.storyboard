@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SnapHomeAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxC-c9-AAx">
+                                <rect key="frame" x="172" y="628" width="30" height="29"/>
+                                <state key="normal" image="oval"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0D-WO-Qrf">
+                                <rect key="frame" x="96" y="629" width="25" height="30"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="messages"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJk-fO-wTb">
+                                <rect key="frame" x="247" y="629" width="32" height="28"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="storys"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vm8-sP-c2E">
+                                <rect key="frame" x="129" y="200" width="105" height="30"/>
+                                <state key="normal" title="start Animation"/>
+                                <connections>
+                                    <action selector="onStartAnimationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FcQ-6N-bHd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZv-SW-apV">
+                                <rect key="frame" x="153" y="543" width="69" height="67"/>
+                                <state key="normal" image="Oval2"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vm8-sP-c2E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-118.5" id="0Ss-tK-CHT"/>
+                            <constraint firstItem="l0D-WO-Qrf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="B44-5k-fxc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bJk-fO-wTb" secondAttribute="trailing" constant="80" id="FWp-Z6-Xez"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="l0D-WO-Qrf" secondAttribute="bottom" constant="8" id="Ii8-FM-Xtz"/>
+                            <constraint firstItem="fxC-c9-AAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MJ2-Ol-xw8"/>
+                            <constraint firstItem="Vm8-sP-c2E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6" id="Par-G6-G6p"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fxC-c9-AAx" secondAttribute="bottom" constant="10" id="WMe-NJ-KC9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bJk-fO-wTb" secondAttribute="bottom" constant="10" id="fZ7-CS-KNW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HZv-SW-apV" secondAttribute="bottom" constant="57" id="p6N-oy-qyT"/>
+                            <constraint firstItem="HZv-SW-apV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zP8-PC-CgY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Oval" destination="HZv-SW-apV" id="Ywv-Kc-afJ"/>
+                        <outlet property="messages" destination="l0D-WO-Qrf" id="Z1p-UZ-5PN"/>
+                        <outlet property="messagesLeadingConstraint" destination="B44-5k-fxc" id="atv-eK-Zb3"/>
+                        <outlet property="miniOval" destination="fxC-c9-AAx" id="e9g-7r-V0V"/>
+                        <outlet property="miniOvalBottomConstraint" destination="WMe-NJ-KC9" id="71T-AC-r38"/>
+                        <outlet property="ovalBottomConstraint" destination="p6N-oy-qyT" id="uJC-iM-Y3B"/>
+                        <outlet property="posts" destination="bJk-fO-wTb" id="InJ-Wo-yDp"/>
+                        <outlet property="postsTrailingConstraint" destination="FWp-Z6-Xez" id="7qE-fN-Mrj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Oval2" width="69" height="67"/>
+        <image name="messages" width="25" height="30"/>
+        <image name="oval" width="30" height="29"/>
+        <image name="storys" width="32" height="28"/>
+    </resources>
+</document>
